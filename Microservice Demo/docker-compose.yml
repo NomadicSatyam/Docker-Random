@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  address-service:
+    image: satyambrother/microservice-demo-address-app:01
+
+    ports:
+      - "8081:8081"
+    networks:
+      - my-network
+
+  employee-service:
+    image: satyambrother/microservice-demo-employee-app:01
+
+    ports:
+      - "8080:8080"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
