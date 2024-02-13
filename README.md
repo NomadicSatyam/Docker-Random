@@ -15,6 +15,11 @@ docker  build --platform <platform-name >   -t <Image-Name>  .
 
 ```
 
+```
+docker buildx build --platform linux/amd64 -t <Image-Name> .
+
+```
+
 ### Create Image and also push to docker hub
 
 ```
